@@ -2,6 +2,7 @@
   "name": "todoapp-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://5z4ry.github.io/todoapp",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -29,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +54,7 @@
   },
   "devDependencies": {
     "@types/redux-devtools-extension": "^2.13.2",
+    "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-beta.0",
     "node-sass": "^9.0.0"
   }
